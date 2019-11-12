@@ -1,0 +1,135 @@
+%% start of file `template.tex'.
+%% Copyright 2006-2015 Xavier Danaux (xdanaux@gmail.com).
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+
+
+\documentclass[10pt,a4paper,sans]{moderncv}        % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
+
+% moderncv themes
+\moderncvstyle{casual}                             % style options are 'casual' (default), 'classic', 'banking', 'oldstyle' and 'fancy'
+\moderncvcolor{blue}                               % color options 'black', 'blue' (default), 'burgundy', 'green', 'grey', 'orange', 'purple' and 'red'
+%\renewcommand{\familydefault}{\sfdefault}         % to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
+%\nopagenumbers{}                                  % uncomment to suppress automatic page numbering for CVs longer than one page
+
+% character encoding
+\usepackage[utf8]{inputenc}                       % if you are not using xelatex ou lualatex, replace by the encoding you are using
+%\usepackage{CJKutf8}                              % if you need to use CJK to typeset your resume in Chinese, Japanese or Korean
+\usepackage{comment}
+% adjust the page margins
+\usepackage[scale=0.75]{geometry}
+%\setlength{\hintscolumnwidth}{3cm}                % if you want to change the width of the column with the dates
+%\setlength{\makecvtitlenamewidth}{10cm}           % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
+
+% personal data
+\name{Alejandro}{M. Ferat}
+\title{Currículum Vitae}                               % optional, remove / comment the line if not wanted
+%\address{street and number}{postcode city}{country}% optional, remove / comment the line if not wanted; the "postcode city" and "country" arguments can be omitted or provided empty
+\phone[mobile]{+52~(55)~73~60~78~38}                   % optional, remove / comment the line if not wanted; the optional "type" of the phone can be "mobile" (default), "fixed" or "fax"
+%\phone[mobile]{+52~(55)~37~82~72~92}                   % optional, remove 
+%\homepage{www.johndoe.com} 
+%\social[linkedin]{john.doe}                        
+%\social[twitter]{jdoe}    
+\social[github]{Alejandro-Ferat} 
+\email{ferat@ciencias.unam.mx}
+\email{alejandro@ferat.com.mx}                             % optional, remove / comment the line if not wanted
+\extrainfo{ferat@ciencias.unam.mx}                 % optional, remove / comment the line if not wanted
+\photo[64pt][0.4pt]{picture}                       % optional, remove / comment the line if not wanted; '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file
+%\quote{Some quote}                                 % optional, remove / comment the line if not wanted
+
+% bibliography adjustements (only useful if you make citations in your resume, or print a list of publications using BibTeX)
+%   to show numerical labels in the bibliography (default is to show no labels)
+\makeatletter\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}\makeatother
+%   to redefine the bibliography heading string ("Publications")
+%\renewcommand{\refname}{Articles}
+
+% bibliography with mutiple entries
+%\usepackage{multibib}
+%\newcites{book,misc}{{Books},{Others}}
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+%\begin{CJK*}{UTF8}{gbsn}                          % to typeset your resume in Chinese using CJK
+%-----       resume       ---------------------------------------------------------
+\makecvtitle
+
+\section{Datos Personales}
+\begin{flushleft}
+\scalebox{0.9}{
+\begin{tabular}{rcl}
+Nombre Completo & $\;\;\;\;\;\;$ & Alejandro Tadeo Meza Ferat  \\
+Fecha de Nacimiento & $\;\;\;\;\;\;$ & 22 de Diciembre de 1996 \\
+Lugar de Nacimiento & $\;\;\;\;\;\;$ & Poza Rica de Hidalgo, Ver. \\
+Nacionalidad & $\;\;\;\;\;\;$ & Mexicana \\
+Dirección & $\;\;\;\;\;\;$ & 
+Arquitectura \# 5, Col. Copilco Universidad \\
+&$\;\;\;\;\;\;$& Delegación Coyoacan, CDMX
+ \\
+CP & $\;\;\;\;\;\;$ & 04360 \\
+CURP & $\;\;\;\;\;\;$ & MEFA961222HVZZRL09 \\
+RFC & $\;\;\;\;\;\;$ & MEFA961222HF2 \\
+Última Actualización & $\;\;\;\;\;\;$ & 09 de Agosto de 2019 \\
+\end{tabular}}
+\end{flushleft}
+
+
+\section{Formación Académica}
+\cvitem{2012-2015 }{\textbf{Bachillerato}}{Centro de Bachillerato Tecnológico Industrial y de Servicios No. 191, Gutierrez Zamora, Veracruz.}
+\cvitem{}{}
+\cvitem{2015-2019 }{\textbf{Licenciatura en Matemáticas} (En proceso)}{Facultad de Ciencias, UNAM, Ciudad de México.} 
+
+
+\section{Capacitación Laboral y Cursos}
+\cvitem{2017}{Diplomado en Tecnologías de la Información (240 hrs.)}{Centro Polanco de Extensión Académica en TIC, UNAM.}
+
+\cvitem{2018}{Curso "Cyber Threat Intelligence" (10 hrs.)}{Centro Tecnológico Aragón, FES Aragón, UNAM.}
+
+%\section{Master thesis}
+%\cvitem{title}{\emph{Title}}
+%\cvitem{supervisors}{Supervisors}
+%\cvitem{description}{Short thesis abstract}
+
+\section{Estancias Académicas}
+\cvitem{2017-2018}{Laboratorio de Seguridad Informática, colaborador del área de Criptografía Aplicada }{Centro Tecnológico Aragón, FES Aragón, UNAM.} 
+\section{Experiencia}
+\subsection{Docente}
+\cvitem{2017}{Facilitador del Seminario: Matemáticas para la Criptografía (60 hrs.)}{Laboratorio de Seguridad Informática, FES Aragón, UNAM.}
+%\subsection{Laboral}
+
+\subsection{Apoyo a la divulgación científica}
+\cvitem{2017-2018}{Miembro del comite organizador de la Semana de la Seguridad Informática $12^{a}$ y $13^{a}$ edición.}{FES Aragón, UNAM.}
+%\subsection{Laboral}
+
+\newpage
+\section{Idiomas}
+\cvitemwithcomment{Español}{100\%}{Idioma Nativo}
+\cvitemwithcomment{Ingles}{90\%}{TOEFL IBT, puntaje 508/560}
+
+
+\section{Conocimientos y Habilidades}
+\cvitem{}{Uso del sistema de composición de textos \LaTeX, con el procesador de
+texto MiKTeX.}
+\cvitem{}{}
+\cvitem{}{Programación en Java 8  nivel básico-intermedio.}
+\cvitem{}{}
+\cvitem{}{Acreditación de Competencias en Tecnologías Microsoft para la Productividad, cursando la capacitación y presentando las evaluaciones en linea necesarias en Mayo-Junio del 2015, con folio de acreditación  000132-BAL286.}
+
+\section{Intereses}
+\cvitem{Seguridad Informática}{Criptografía, Análisis y Administración de Riesgos, Administración de la Seguridad, Privacidad de la Información.}
+ 
+\cvitem{}{}
+
+\cvitem{Probabilidad y Estadística}{Probabilidad, Procesos Estocásticos, Estadística, Teoría del Riesgo y Ciencia de los Datos.}
+
+\cvitem{}{}
+
+\cvitem{Fundamentos de la Matemática}{Lógica Matemática, Teoría de Conjuntos y Crisis de los Fundamentos.}
+
+
+\clearpage
+\end{document}
+
+
