@@ -1,0 +1,153 @@
+%% start of file `template.tex'.
+%% Copyright 2006-2015 Xavier Danaux (xdanaux@gmail.com).
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+
+
+\documentclass[10pt,a4paper,sans]{moderncv}        % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
+
+% moderncv themes
+\moderncvstyle{casual}                             % style options are 'casual' (default), 'classic', 'banking', 'oldstyle' and 'fancy'
+\moderncvcolor{blue}                               % color options 'black', 'blue' (default), 'burgundy', 'green', 'grey', 'orange', 'purple' and 'red'
+%\renewcommand{\familydefault}{\sfdefault}         % to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
+%\nopagenumbers{}                                  % uncomment to suppress automatic page numbering for CVs longer than one page
+
+% character encoding
+\usepackage[utf8]{inputenc}                       % if you are not using xelatex ou lualatex, replace by the encoding you are using
+%\usepackage{CJKutf8}                              % if you need to use CJK to typeset your resume in Chinese, Japanese or Korean
+\usepackage{comment}
+% adjust the page margins
+\usepackage[scale=0.75]{geometry}
+%\setlength{\hintscolumnwidth}{3cm}                % if you want to change the width of the column with the dates
+%\setlength{\makecvtitlenamewidth}{10cm}           % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
+
+% personal data
+\name{Rodrigo Guadalupe}{Chávez Jiménez}
+\title{Curriculum Vitae}                               % optional, remove / comment the line if not wanted
+%\address{street and number}{postcode city}{country}% optional, remove / comment the line if not wanted; the "postcode city" and "country" arguments can be omitted or provided empty
+\phone[mobile]{+52~(55)~41~83~42~78}                   % optional, remove / comment the line if not wanted; the optional "type" of the phone can be "mobile" (default), "fixed" or "fax"
+%\phone[mobile]{+52~(55)~37~82~72~92}                   % optional, remove 
+%\homepage{www.johndoe.com} 
+%\social[linkedin]{john.doe}                        
+%\social[twitter]{jdoe}    
+\social[github]{RodGpe} 
+\email{rodrigo.ch1995@gmail.com}
+%\email{alejandro@ferat.com.mx}                             % optional, remove / comment the line if not wanted
+%\extrainfo{ferat@ciencias.unam.mx}                 % optional, remove / comment the line if not wanted
+\photo[64pt][0.4pt]{rodrigo}                       % optional, remove / comment the line if not wanted; '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file
+%\quote{Some quote}                                 % optional, remove / comment the line if not wanted
+
+% bibliography adjustements (only useful if you make citations in your resume, or print a list of publications using BibTeX)
+%   to show numerical labels in the bibliography (default is to show no labels)
+\makeatletter\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}\makeatother
+%   to redefine the bibliography heading string ("Publications")
+%\renewcommand{\refname}{Articles}
+
+% bibliography with mutiple entries
+%\usepackage{multibib}
+%\newcites{book,misc}{{Books},{Others}}
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+%\begin{CJK*}{UTF8}{gbsn}                          % to typeset your resume in Chinese using CJK
+%-----       resume       ---------------------------------------------------------
+\makecvtitle
+
+\section{Personal Details}
+\begin{flushleft}
+\scalebox{0.9}{
+\begin{tabular}{rcl}
+Name & $\;\;\;\;\;\;$ & Rodrigo Guadalupe Chávez Jiménez  \\
+Birthdate & $\;\;\;\;\;\;$ & December 12, 1995 \\
+Place of birth & $\;\;\;\;\;\;$ &  Alvaro Obregón, CDMX. \\
+Nationality & $\;\;\;\;\;\;$ & Mexican \\
+Address & $\;\;\;\;\;\;$ & 
+La Cruz \# 240, suburb. Xicalhuacan  \\
+&$\;\;\;\;\;\;$&  Xochmilco, CDMX
+ \\
+PC & $\;\;\;\;\;\;$ & 16500 \\
+CURP & $\;\;\;\;\;\;$ & CAJR951212HDFHMD08 \\
+RFC & $\;\;\;\;\;\;$ & CAJR951212R85 \\
+Last update & $\;\;\;\;\;\;$ & March 15, 2020 \\
+\end{tabular}}
+\end{flushleft}
+
+
+\section{Education}
+\cvitem{2011-2015 }{\textbf{High School}}{National High School No. 1 Gabino Barreda, UNAM}
+\cvitem{}{}
+\cvitem{2014-2015 }{\textbf{Computer Technician Career}}{National High School No. 1 Gabino Barreda, UNAM}
+\cvitem{}{}
+\cvitem{2015-2018 }{\textbf{Computer Engineering}}{Faculty of Higher Education Aragón, UNAM} 
+\cvitem{}{}
+\cvitem{2018-2020 }{\textbf{Master Degree in Computer Science} (In progress)}{IIMAS, UNAM} 
+
+
+
+\section{Courses}
+\cventry{2017}{Seminar: Mathematics for Cryptography (60 h)}{Information Security Lab}{{CTA Aragón}}{FES Aragón}{}
+\cventry{2019}{Winter School: Data Science}{IIMAS Mérida}{{Mérida}}{}{}
+\cventry{2019}{XXXIV Colloquium Victor Neumann Lara}{COZCyT}{{Zacatecas}}{}{}
+\cventry{2019}{Summer School: Computational and Combinatorial Geometry}{UAZ}{{Zacatecas}}{}{}
+\cventry{2019}{18th Workshop: Routing in Mérida}{UAY}{{Mérida}}{}{}
+\cventry{2019}{National Congress of the Mexican Mathematical Society}{UANL}{{Monterrey}}{}{}
+\cventry{2020}{VI Winter School of Discrete Mathematics}{CIMAT}{{Guanajuato}}{}{}
+\cventry{2020}{XXXV Colloquium Victor Neumann Lara}{CECEQ}{{Querétaro}}{}{}
+
+\section{Lectures}
+
+\cventry{2020}{Disjoint monochromatic orthogonal paths}{XXXV Colloquium Victor Neumann Lara}{CECEQ}{{Querétaro}}{}
+
+%\section{Master thesis}
+%\cvitem{title}{\emph{Title}}
+%\cvitem{supervisors}{Supervisors}
+%\cvitem{description}{Short thesis abstract}
+
+\section{Academic Stays}
+
+\cventry{2016 - 2018}{Information Security Lab}{{CTA Aragón}}{FES Aragón}{UNAM}{
+	\begin{itemize}
+		%\item Miembro del Proyecto Cyber Threat Intelligence
+		\item "Two-factor Access Control System" project member.
+		\item Secure Software Development Area member.
+	\end{itemize}}
+
+
+\section{Experiences}
+\subsection{Scientific Dissemination}
+\cventry{2019}{Member of the organizing committee of the Information Security Week $11^{th}$, $12^{th}$ y $13^{th}$ edition}{FES Aragón}{{UNAM}}{}{}
+%\cvitem{2017-2018}{Miembro del comite organizador de la Semana de la Seguridad Informática $11^{a}$, $12^{a}$ y $13^{a}$ edición}{FES Aragón, UNAM.}
+%\subsection{Laboral}
+
+%\newpage
+\section{Languages}
+\cvitemwithcomment{Spanish}{100\%}{Native}
+%\cvitemwithcomment{Ingles}{90\%}{TOEFL IBT, puntaje 508/560}
+\cvitemwithcomment{English}{80\%}{}
+
+
+\section{Skills}
+\cvitem{Programming Languages}{Java, C, PHP, Javascript, Python, Assembly language for microcontrollers}
+\cvitem{}{}
+\cvitem{Web technologies}{HTML, CSS, Angular, Electron}
+\cvitem{}{}
+\cvitem{Micro electronics}{Microcontrollers, CPLD, FPGA, Arduino}
+\cvitem{}{}
+\cvitem{Operating Systems}{\textbf{Linux}, Windows }
+\cvitem{}{}	
+\cvitem{Hardware Description Languages}{VHDL, Verilog}
+\cvitem{}{}
+\cvitem{Other}{MySQL, Docker, Struts2, Spring, \LaTeX}
+
+\section{Interests}
+\cvitem{Information Securtiy}{Cryptography}
+\cvitem{}{}
+\cvitem{Algorithms and Data Structures}{Computational Geometry, Combinatorics}
+\cvitem{}{}
+\clearpage
+\end{document}
+
+
